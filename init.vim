@@ -79,7 +79,8 @@ Plug section
         enable = true,              -- false will disable the whole extension
         },
     }
-
+    
+   #Java simple compilation shortcut
    command Java !javac %:t && java % + '.class'
 
    #NERDTree icons config
