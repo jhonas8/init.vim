@@ -69,6 +69,9 @@ Plug section
     #shortcut NERDTree 
     map <silent> <C-n> :NERDTreeToggle<CR>
     
+    #NERDTree autocmd
+    autocmd BufEnter NERD_tree_* | execute 'normal R' #this will auto-refresh the nerdtree anytime it is focused
+
     #Shortcut save and close
     map <silent> <C-s> :w!<CR>
     map <silent> <C-x> :q!<CR>
