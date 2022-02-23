@@ -1,4 +1,5 @@
 Plug section 
+
 	call plug#begin()
 		Plug 'pangloss/vim-javascript'
 		Plug 'leafgarland/typescript-vim'
@@ -18,6 +19,7 @@ Plug section
         Plug 'nvim-treesitter/nvim-treesitter'
         Plug 'townk/vim-autoclose'
         Plug 'ryanoasis/vim-devicons'
+        Plug 'alvan/vim-closetag'
         
     call plug#end()
 
@@ -70,11 +72,15 @@ Plug section
     map <silent> <C-n> :NERDTreeToggle<CR>
     
     #NERDTree autocmd
-    autocmd BufEnter NERD_tree_* | execute 'normal R' #this will auto-refresh the nerdtree anytime it is focused
+    #autocmd BufEnter NERD_tree_* | execute 'normal R' #this will auto-refresh the nerdtree anytime it is focused
 
     #Shortcut save and close
     map <silent> <C-s> :w!<CR>
     map <silent> <C-x> :q!<CR>
+
+    #Shortcut to move lines up and down using alt 
+    nnoremap <A-j> :m+<CR>==
+    nnoremap <A-k> :m-2<CR>==
     
     require'nvim-treesitter.configs'.setup {
         ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
@@ -89,3 +95,46 @@ Plug section
    #NERDTree icons config
    let g:WebDevIconsUnicodeDecorateFolderNodes = 1
    let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+
+   " filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled.
+"
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+"
+let g:closetag_filetypes = 'html,xhtml,phtml'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" dict
+" Disables auto-close if not in a "valid" region (based on filetype)
+"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
