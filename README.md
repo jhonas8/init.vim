@@ -20,10 +20,10 @@
 
 ### Scripts ###
 
-    - Coc auto-recognize extension jsx,tsx,ts,js
-    - [Coc configuration for eslint][coc-eslint]
-    - [Coc configuration for prettier][coc-prettier]
-    - [Coc typescript-server][coc-tsserver]
+- Coc auto-recognize extension jsx,tsx,ts,js
+- [Coc configuration for eslint][coc-eslint]
+- [Coc configuration for prettier][coc-prettier]
+- [Coc typescript-server][coc-tsserver]
 
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
