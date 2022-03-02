@@ -1,8 +1,8 @@
 # init.vim
 This is my actual vim configuration. There's around a month I've started using VIM and learn its language. 
 
-Theme:
-Gruvbox colorscheme:
+<h2>Theme</h2>
+[<h4>Gruvbox colorscheme</h4>][https://github.com/morhetz/gruvbox]
 <img
     alt="gruvbox print"
     src="./gruvboxprint.png"
