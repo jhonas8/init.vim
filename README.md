@@ -2,7 +2,9 @@
 This is my actual vim configuration. There's around a month I've started using VIM and learn its language. 
 
 <h2>Theme</h2>
-[Gruvbox colorscheme](gruvbox)
+<a src="https://github.com/morhetz/gruvbox" targe="_top">
+    <h3>Gruvbox colorscheme</h3>
+<a/>
 <img
     alt="gruvbox print"
     src="./gruvboxprint.png"
@@ -22,4 +24,3 @@ The command for this script is <strong>:Java</strong>
 <p>For developing Apps using React, I've set a bunch of scripts to make the code process easier.</p>
 <p>Auto-close tags for HTML, JSX and TSX files.</p>
 
-[gruvbox] : "https://github.com/morhetz/gruvbox"
