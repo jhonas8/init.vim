@@ -2,7 +2,7 @@
 
 [<img
     alt="vim icon"
-    width="30px"
+    width="60px"
     align="center"
     src="https://www.svgrepo.com/show/354105/neovim.svg"
 />][neovim]
