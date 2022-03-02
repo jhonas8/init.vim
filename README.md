@@ -23,7 +23,11 @@
 <ul>
     <h3>Scripts</h3>
     <li>Coc auto-recognize extension jsx,tsx,ts,js</li>
-    [<li>Coc configuration for eslint</li>](https://github.com/neoclide/coc-eslint)
-    [<li>Coc configuration for prettier</li>](https://github.com/neoclide/coc-prettier)
-    [<li>Coc typescript-server</li>](https://github.com/neoclide/coc-tsserver)
+    [<li>Coc configuration for eslint</li>][coc-eslint]
+    [<li>Coc configuration for prettier</li>][coc-prettier]
+    [<li>Coc typescript-server</li>][coc-tsserver]
 </ul>
+
+[coc-eslint]: https://github.com/neoclide/coc-prettier
+[coc-prettier]: https://github.com/neoclide/coc-prettier
+[coc-tsserver]: https://github.com/neoclide/coc-tsserver
