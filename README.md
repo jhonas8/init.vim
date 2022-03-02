@@ -1,11 +1,10 @@
 #My personal neovim settings 
 
-[<img
-    alt="vim icon"
-    width="30px"
-    align="center"
-    src="https://www.svgrepo.com/show/354516/vim.svg"
-/>][neovim]
+[<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    style="height: 2.5em" 
+    viewBox="0 0 742 214">
+</svg>][neovim]
 
 [neovim]: https://neovim.io
 
