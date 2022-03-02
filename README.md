@@ -2,7 +2,7 @@
 This is my actual vim configuration. There's around a month I've started using VIM and learn its language. 
 
 <h2>Theme</h2>
-<h4>Gruvbox colorscheme</h4>(https://github.com/morhetz/gruvbox)
+[<h4>Gruvbox colorscheme</h4>](https://github.com/morhetz/gruvbox)
 <img
     alt="gruvbox print"
     src="./gruvboxprint.png"
