@@ -23,6 +23,7 @@ Plug section
         #Themes plugins
         Plug 'arcticicestudio/nord-vim'
         Plug 'morhetz/gruvbox'
+        #neoterm
         Plug 'kassio/neoterm'
 
     call plug#end()
@@ -110,6 +111,11 @@ Plug section
     let g:neoterm_autoscroll=1 " scroll to the bottom when running a command
     nnoremap <leader><cr> :TREPLSendLine<cr>j " send current line and move down
     vnoremap <leader><cr> :TREPLSendSelection<cr> " send current selection
+    set nocompatible
+    
+    filetype off
+    filetype plugin on
+    let &runtimepath.=',~/.vim/bundle/neoterm'
 
    " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
