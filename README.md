@@ -35,6 +35,7 @@
 		let g:coc_global_extensions += ['coc-prettier']
 	endif`
 - [Coc typescript-server][coc-tsserver]
+    `let g:coc_global_extensions = ['coc-tsserver']`
 
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
