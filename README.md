@@ -21,6 +21,11 @@
 ### Scripts ###
 
 - Coc auto-recognize extension .(JSX, TSX, TS, JS)
+    <br/>
+    `autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+	autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+`
+
 - [Coc configuration for eslint][coc-eslint]
     <br/>
   `if isdirectory('./node_modules')
