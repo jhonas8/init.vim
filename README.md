@@ -1,4 +1,4 @@
-#My personal neovim settings 
+<h1>My personal NEOVIM settings</h1> 
 
 [<img
     alt="vim icon"
