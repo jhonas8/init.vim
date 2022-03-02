@@ -19,6 +19,7 @@
 ## Settings for React and Typescript ##
 
 ### Scripts ###
+
     - Coc auto-recognize extension jsx,tsx,ts,js
     - [Coc configuration for eslint][coc-eslint]
     - [Coc configuration for prettier][coc-prettier]
