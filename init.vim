@@ -20,11 +20,19 @@ Plug section
         Plug 'townk/vim-autoclose'
         Plug 'ryanoasis/vim-devicons'
         Plug 'alvan/vim-closetag'
-        
+        #Themes plugins
+        Plug 'arcticicestudio/nord-vim'
+        Plug 'morhetz/gruvbox'
+        Plug 'kassio/neoterm'
+
     call plug#end()
 
 #Configuration section
-	
+    #Colorscheme 
+    colorscheme gruvbox
+    let g:gruvbox_transparent_bg=0.85 
+    set background=dark
+    
 	#Scripts
 	autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 	autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
@@ -95,6 +103,13 @@ Plug section
    #NERDTree icons config
    let g:WebDevIconsUnicodeDecorateFolderNodes = 1
    let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+
+   #Kassio neoterm configuration
+    let g:neoterm_default_mod='belowright' " open terminal in bottom split
+    let g:neoterm_size=16 " terminal split size
+    let g:neoterm_autoscroll=1 " scroll to the bottom when running a command
+    nnoremap <leader><cr> :TREPLSendLine<cr>j " send current line and move down
+    vnoremap <leader><cr> :TREPLSendSelection<cr> " send current selection
 
    " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
