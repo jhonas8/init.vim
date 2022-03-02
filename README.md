@@ -2,9 +2,10 @@
 This is my actual vim configuration. There's around a month I've started using VIM and learn its language. 
 
 <h2>Theme</h2>
-<a src="https://github.com/morhetz/gruvbox" targe="_top">
+<a href="https://github.com/morhetz/gruvbox">
     <h3>Gruvbox colorscheme</h3>
 <a/>
+
 <img
     alt="gruvbox print"
     src="./gruvboxprint.png"
