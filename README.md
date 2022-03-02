@@ -18,10 +18,10 @@
 
 <br/> <br/>
 
-<h4>Settings for React and Typescript</h4>
+<h2>Settings for React and Typescript</h2>
 
 <ul>
-    <h6>Scripts</h6>
+    <h3>Scripts</h3>
     <li>Coc auto-recognize extension jsx,tsx,ts,js</li>
     [<li>Coc configuration for eslint</li>](https://github.com/neoclide/coc-eslint)
     [<li>Coc configuration for prettier</li>](https://github.com/neoclide/coc-prettier)
