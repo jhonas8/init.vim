@@ -1,0 +1,23 @@
+{
+  "name": "nvim",
+  "version": "1.0.0",
+  "description": "My personal nvim settings",
+  "main": "init.vim",
+  "scripts": {
+    "git": "git add . && git commit -m $npm_config_message && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonas8/init.vim.git"
+  },
+  "keywords": [
+    "Init.vim",
+    "Vim"
+  ],
+  "author": "João Melo <joao.victor.ribeiro.melo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonas8/init.vim/issues"
+  },
+  "homepage": "https://github.com/jhonas8/init.vim#readme"
+}
