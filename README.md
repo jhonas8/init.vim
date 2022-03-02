@@ -18,3 +18,11 @@
 
 <br/> <br/>
 
+<h4>Settings for React and Typescript</h4>
+
+<ul>
+    <h6>Scripts</h6>
+    <li>Coc auto-recognize extension jsx,tsx,ts,js</li>
+    <li>Coc configuration for eslint and prettier</li>
+    <li>Coc typescript-server</li>
+</ul>

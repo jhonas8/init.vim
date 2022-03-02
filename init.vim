@@ -15,7 +15,6 @@ Plug section
         Plug 'dense-analysis/ale'
 	    Plug 'SirVer/ultisnips'
         Plug 'mlaursen/vim-react-snippets'
-        Plug 'andweeb/preisence.nvim'
         Plug 'nvim-treesitter/nvim-treesitter'
         Plug 'townk/vim-autoclose'
         Plug 'ryanoasis/vim-devicons'
