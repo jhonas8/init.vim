@@ -9,6 +9,6 @@
 
 [neovim]: https://neovim.io
 
-[<h4 style="color: #fff">
+[<h4 style="color: #ffff">
 GruvBox colorscheme</h4>](https://github.com/morhetz/gruvbox)
 
