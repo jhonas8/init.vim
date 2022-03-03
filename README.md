@@ -42,7 +42,17 @@
 - [Coc typescript-server][coc-tsserver]
     `let g:coc_global_extensions = ['coc-tsserver']`
 
+### Plugins ###
+
+[<img
+    alt="vim-javascript"
+    align="left"
+    width="22px"
+    src="https://www.svgrepo.com/show/349419/javascript.svg"
+/>][vim-javascript]
+
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
 [coc-prettier]: https://github.com/neoclide/coc-prettier
 [coc-tsserver]: https://github.com/neoclide/coc-tsserver
+[vim-javascript]: https://github.com/pangloss/vim-javascript
