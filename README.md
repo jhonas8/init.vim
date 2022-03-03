@@ -50,9 +50,16 @@
     width="22px"
     src="https://www.svgrepo.com/show/349419/javascript.svg"
 />][vim-javascript]
+[<img
+    alt="typescript-vim"
+    align="left"
+    width="22px"
+    src="https://www.svgrepo.com/show/349540/typescript.svg"
+/>][typescript-vim]
 
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
 [coc-prettier]: https://github.com/neoclide/coc-prettier
 [coc-tsserver]: https://github.com/neoclide/coc-tsserver
 [vim-javascript]: https://github.com/pangloss/vim-javascript
+[typescript-vim]: https://github.com/leafgarland/typescript-vim
