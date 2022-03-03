@@ -125,8 +125,9 @@
 ## Key Remap ##
 
 **Move line up and down**  
-    nnoremap <A-j> :m+<CR>==
-    nnoremap <A-k> :m-2<CR>== 
+    
+    nnoremap <A-j> :m+<CR>== #ALT+j move a line up
+    nnoremap <A-k> :m-2<CR>== #ALT+k move a line down
 
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
