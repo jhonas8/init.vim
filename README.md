@@ -61,7 +61,7 @@
     align="left"
     width="22px"
     src="https://www.svgrepo.com/show/221324/jsx.svg"
-    style="fill: #ffffff;"
+    style="filter: sepia(1);"
 />][vim-jsx-typescript]
 [<img
     alt="syled-components"
