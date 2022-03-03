@@ -107,6 +107,20 @@
 > Simple script to compile and execute the current java file.
 >  
 > `command Java !javac %:t && java % + '.class'`
+  
+**Neoterm configuration**  
+> Neoterm settings fot its behavior and specific key mappings.  
+> ` let g:neoterm_default_mod='belowright' " open terminal in bottom split
+    let g:neoterm_size=16 " terminal split size
+    let g:neoterm_autoscroll=1 " scroll to the bottom when running a command
+    nnoremap <leader><cr> :TREPLSendLine<cr>j " send current line and move down
+    vnoremap <leader><cr> :TREPLSendSelection<cr> " send current selection
+    set nocompatible
+    
+    filetype off
+    filetype plugin on
+    let &runtimepath.=',~/.vim/bundle/neoterm' `
+
 
 
 [neovim]: https://neovim.io
