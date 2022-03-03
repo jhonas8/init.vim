@@ -20,25 +20,25 @@
 
 ### Scripts ###
 
-- Coc auto-recognize extension .(JSX, TSX, TS, JS)
-    <br/>
-    `autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+- Coc auto-recognize extension .(JSX, TSX, TS, JS)  
+    
+    autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 	autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
-`
 
-- [Coc configuration for eslint][coc-eslint]
-    <br/>
-  `if isdirectory('./node_modules')
-	&& isdirectory('./node_modules/eslint')
-		let g:coc_global_extensions += ['coc-eslint']
-	endif`
+- [Coc configuration for eslint][coc-eslint]  
 
-- [Coc configuration for prettier][coc-prettier]
-    <br/>
-    `if isdirectory('./node_modules')
-	&& isdirectory('./node_modules/prettier')
+    if isdirectory('./node_modules')
+        && isdirectory('./node_modules/eslint')
+        let g:coc_global_extensions += ['coc-eslint']
+    endif
+
+- [Coc configuration for prettier][coc-prettier]  
+
+    if isdirectory('./node_modules')
+	    && isdirectory('./node_modules/prettier')
 		let g:coc_global_extensions += ['coc-prettier']
-	endif`
+	endif
+
 - [Coc typescript-server][coc-tsserver]
     `let g:coc_global_extensions = ['coc-tsserver']`
 
@@ -139,6 +139,11 @@
 **NerdTree open and close toggle**  
 
 `map <silent> <C-n> :NERDTreeToggle<CR>` 
+
+  
+
+## Other Plugins ##
+
 
 <!-- URL variables -->
 [neovim]: https://neovim.io
