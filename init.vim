@@ -10,15 +10,16 @@ Plug section
 			let g:coc_global_extensions=[
 				\ 'coc-tsserver'
 			\]	
+        Plug 'mlaursen/vim-react-snippets'
+        Plug 'townk/vim-autoclose'
+        Plug 'alvan/vim-closetag'
+       
         Plug 'preservim/nerdtree'
         Plug 'sheerun/vim-polyglot'
         Plug 'dense-analysis/ale'
 	    Plug 'SirVer/ultisnips'
-        Plug 'mlaursen/vim-react-snippets'
         Plug 'nvim-treesitter/nvim-treesitter'
-        Plug 'townk/vim-autoclose'
         Plug 'ryanoasis/vim-devicons'
-        Plug 'alvan/vim-closetag'
         #Themes plugins
         Plug 'arcticicestudio/nord-vim'
         Plug 'morhetz/gruvbox'
