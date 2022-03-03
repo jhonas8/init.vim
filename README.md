@@ -11,7 +11,7 @@
 
 <img
     alt="gruvbox print"
-    src="./gruvboxprint.png"
+    src="./assets/images/gruvboxprint.png"
 />
 
 <br/> <br/>
