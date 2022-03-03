@@ -128,6 +128,15 @@
     
     nnoremap <A-j> :m+<CR>== #ALT+j move a line up
     nnoremap <A-k> :m-2<CR>== #ALT+k move a line down
+    
+
+**Save and close**
+
+    map <silent> <C-s> :w!<CR> #CTRL+s saves the file
+    map <silent> <C-x> :q!<CR> #CTRL+x closes the file
+    
+
+
 
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
