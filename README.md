@@ -91,7 +91,7 @@
     alt="autoclose"
     align="left"
     width="22px"
-    src="https://www.svgrepo.com/show/165013/html.svg"
+    src="https://www.nicepng.com/png/detail/947-9477772_html-closing-tag-red-circle.png"
 />][vim-autoclose]
 [<img
     alt="vim-closetag"
