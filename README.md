@@ -100,10 +100,12 @@
     src="https://www.svgrepo.com/show/250451/coding-html.svg"
 />][vim-autoclose-tag]
 
+<br/> <br/>
+
 ## Other Scripts ## 
-    Java Compiler
-        Simple script to compile and execute the current java file.
-            `command Java !javac %:t && java % + '.class'`
+Java Compiler
+Simple script to compile and execute the current java file.
+`command Java !javac %:t && java % + '.class'`
 
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
