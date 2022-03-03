@@ -136,8 +136,11 @@
     map <silent> <C-x> :q!<CR> #CTRL+x closes the file
     
 
+**NerdTree open and close toggle**  
 
+`map <silent> <C-n> :NERDTreeToggle<CR>` 
 
+<!-- URL variables -->
 [neovim]: https://neovim.io
 [coc-eslint]: https://github.com/neoclide/coc-prettier
 [coc-prettier]: https://github.com/neoclide/coc-prettier
