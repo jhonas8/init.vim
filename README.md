@@ -22,8 +22,8 @@
 
 - Coc auto-recognize extension .(JSX, TSX, TS, JS)  
     
-    autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-	autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+        autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+	    autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 - [Coc configuration for eslint][coc-eslint]  
 
