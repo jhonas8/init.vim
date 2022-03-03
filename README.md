@@ -60,7 +60,7 @@
     alt="vim-jsx-typescript"
     align="left"
     width="22px"
-    src="https://www.svgrepo.com/show/221324/jsx.svg"
+    src="https://w7.pngwing.com/pngs/661/898/png-transparent-react-javascript-library-web-development-vue-js-funding-icon-logo-symmetry-web-development-thumbnail.png"
     style="filter: invert(100%);"
 />][vim-jsx-typescript]
 [<img
@@ -97,7 +97,7 @@
     alt="vim-closetag"
     align="left"
     width="22px"
-    src="https://www.svgrepo.com/show/143133/html-coding.svg"
+    src="https://www.svgrepo.com/show/250451/coding-html.svg"
 />][vim-autoclose-tag]
 
 [neovim]: https://neovim.io
