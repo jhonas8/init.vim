@@ -147,7 +147,7 @@
 
 <!-- URL variables -->
 [neovim]: https://neovim.io
-[coc-eslint]: https://github.com/neoclide/coc-prettier
+[coc-eslint]: https://github.com/neoclide/coc-eslint
 [coc-prettier]: https://github.com/neoclide/coc-prettier
 [coc-tsserver]: https://github.com/neoclide/coc-tsserver
 [vim-javascript]: https://github.com/pangloss/vim-javascript
