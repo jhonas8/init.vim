@@ -7,7 +7,7 @@
     src="https://www.svgrepo.com/show/354105/neovim.svg"
 />][neovim]
 
-#### [GruvBox colorscheme ](https://github.com/morhetz/gruvbox) #####
+## [GruvBox colorscheme ](https://github.com/morhetz/gruvbox) ##
 
 <img
     alt="gruvbox print"
