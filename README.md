@@ -105,8 +105,8 @@
 ## Other Scripts ## 
 **Java Compiler**  
 > Simple script to compile and execute the current java file.
->  
-> `command Java !javac %:t && java % + '.class'`
+   
+`command Java !javac %:t && java % + '.class'`
   
 **Neoterm configuration**  
 > Neoterm settings fot its behavior and specific key mappings.  
