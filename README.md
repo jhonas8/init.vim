@@ -42,7 +42,7 @@
 - [Coc typescript-server][coc-tsserver]
     `let g:coc_global_extensions = ['coc-tsserver']`
 
-- Autofix Eslint (hardcode)
+- Autofix Eslint (hardcode)  
 
          autocmd BufWritePost * silent! !npx eslint --fix %:p
 
