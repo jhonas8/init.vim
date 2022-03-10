@@ -1,5 +1,6 @@
 {
 	"eslint.autoFixOnSave": true,
+    "eslint.fixOnSaveTimeout": 100,
 	"eslint.filetypes": ["javascript", "javascriptreact", "typescript","typescriptreact"],
 
 	"prettier.disableSuccessMessage": true

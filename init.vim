@@ -25,7 +25,7 @@ Plug section
         Plug 'morhetz/gruvbox'
         #neoterm
         Plug 'kassio/neoterm'
-
+        
     call plug#end()
 
 #Configuration section
@@ -40,7 +40,7 @@ Plug section
 
 	#Settings
 	set number
-	set mouse=a
+	set)mouse=a
 
 	#Coc configuration
 	if isdirectory('./node_modules')
@@ -51,8 +51,12 @@ Plug section
 	if isdirectory('./node_modules')
 	&& isdirectory('./node_modules/eslint')
 		let g:coc_global_extensions += ['coc-eslint']
+
 	endif
     
+    #AutoFix eslint HARDCODE
+    autocmd BufWritePost * silent! !npx eslint --fix %:p
+
     let g:coc_global_extensions = ['coc-tsserver']
 
     #Nvim settings 
