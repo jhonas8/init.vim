@@ -14,12 +14,17 @@ call plug#begin()
         Plug 'townk/vim-autoclose'
         Plug 'alvan/vim-closetag'
 
+        Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+
         Plug 'Xuyuanp/nerdtree-git-plugin'
         Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
         Plug 'ryanoasis/vim-devicons'
 
         Plug 'SirVer/ultisnips'
         Plug 'honza/vim-snippets'
+
+        Plug 'github/copilot.vim'
+        Plug 'Olical/conjure'
 
         Plug 'nvim-lua/plenary.nvim'
         Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -34,26 +39,29 @@ call plug#begin()
 
         Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
        
+        Plug 'bignimbus/pop-punk.vim'
+        Plug 'norcalli/nvim-colorizer.lua'
         Plug 'preservim/nerdtree'
         Plug 'sheerun/vim-polyglot'
         Plug 'dense-analysis/ale'
-	    Plug 'SirVer/ultisnips'
         Plug 'ryanoasis/vim-devicons'
         Plug 'arcticicestudio/nord-vim'
-        Plug 'morhetz/gruvbox'
         Plug 'kassio/neoterm'
         Plug 'ctrlpvim/ctrlp.vim'
         Plug 'junegunn/fzf'
         Plug 'liuchengxu/vim-clap'
         Plug 'guns/vim-sexp',    {'for': 'clojure'}
         Plug 'liquidz/vim-iced', {'for': 'clojure'}
-    call plug#end()
 
-    colorscheme gruvbox
-    let g:gruvbox_transparent_bg=0.85 
+        Plug 'shaunsingh/moonlight.nvim'
+    call plug#end()
     
 	autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 	autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+    
+    "Coc autocmds
+    autocmd CursorHold * silent call CocActionAsync('highlight')
+    "autocmd BufWritePre *.{js,jsx,ts,tsx} :call CocActionAsync('format')
 
 	set number
 	set mouse=a
@@ -90,11 +98,21 @@ call plug#begin()
     set ma 
     set encoding=UTF-8
     set clipboard=unnamedplus
-    syntax on
+    set termguicolors
 
-    filetype on
-	filetype plugin on
-	filetype indent on
+    " pop-punk ANSI colors for vim terminal
+    let g:terminal_ansi_colors = pop_punk#AnsiColors()
+
+    colorscheme moonlight
+
+    " for the airline theme - note the underscore instead of the hyphen
+    let g:airline_theme = 'pop_punk'
+
+    " just for fun
+    let g:airline_section_c = '🎸 %F'
+
+    syntax on
+	filetype plugin indent on
 
     lua require('plugins.lualine')
 
@@ -102,6 +120,7 @@ call plug#begin()
 
     map <silent> <C-n> :NERDTreeToggle<CR>
     
+    map <silent> <C-l> :LazyGit<CR>
 
     map <silent> <C-s> :w!<CR>
     map <silent> <C-x> :q!<CR>
@@ -118,10 +137,16 @@ call plug#begin()
     nnoremap <leader>sp viw:lua require('spectre').open_file_search()<cr>
     nnoremap <leader>ff <cmd>Telescope find_files<cr>
     
-   command Java !javac %:t && java % + '.class'
+    command Java !javac %:t && java % + '.class'
 
-   let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-   let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+    lua require("toggleterm").setup{}
+
+    autocmd TermEnter term://*toggleterm#* tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+    nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+    inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
+
+    let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+    let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
 
     let g:neoterm_default_mod='belowright' 
     let g:neoterm_size=16 
@@ -133,6 +158,10 @@ call plug#begin()
     filetype off
     filetype plugin on
     let &runtimepath.=',~/.vim/bundle/neoterm'
+    let g:clojure_syntax_keywords = {
+                \  'clojureMacro': ["defproject", "defcustom"],
+                \ 'clojureFunc': ["string/join", "string/replace"]
+                \}
 
     let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
