@@ -1,10 +1,10 @@
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
-]]
+local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/opt/packer.nvim"
 
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+  vim.cmd("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+end
+
+vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     local lua_path = function(name)
         return string.format("require'plugins.%s'", name)
