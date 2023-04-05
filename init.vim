@@ -16,10 +16,13 @@ call plug#begin()
 
         Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
+        Plug 'SirVer/ultisnips'
+        Plug 'f-person/git-blame.nvim'
+        Plug 'mlaursen/vim-react-snippets'
         Plug 'Xuyuanp/nerdtree-git-plugin'
         Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
         Plug 'ryanoasis/vim-devicons'
-
+        Plug 'MunifTanjim/nui.nvim'
         Plug 'SirVer/ultisnips'
         Plug 'honza/vim-snippets'
 
@@ -53,7 +56,9 @@ call plug#begin()
         Plug 'guns/vim-sexp',    {'for': 'clojure'}
         Plug 'liquidz/vim-iced', {'for': 'clojure'}
 
-        Plug 'shaunsingh/moonlight.nvim'
+        " Theme Plugins
+        Plug 'alexanderjeurissen/lumiere.vim'
+        " Plug 'shaunsingh/moonlight.nvim'
     call plug#end()
     
 	autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
@@ -100,16 +105,27 @@ call plug#begin()
     set clipboard=unnamedplus
     set termguicolors
 
-    " pop-punk ANSI colors for vim terminal
-    let g:terminal_ansi_colors = pop_punk#AnsiColors()
+    "Prettier
+    command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+    vmap <leader>f  <Plug>(coc-format-selected)
+    nmap <leader>f  <Plug>(coc-format-selected)
+    " Auto-save Prettier 
+    
 
-    colorscheme moonlight
+    " pop-punk ANSI colors for vim terminal
+    " let g:terminal_ansi_colors = pop_punk#AnsiColors()
+
+    colorscheme lumiere
 
     " for the airline theme - note the underscore instead of the hyphen
-    let g:airline_theme = 'pop_punk'
+    " let g:airline_theme = 'pop_punk'
 
     " just for fun
     let g:airline_section_c = '🎸 %F'
+
+    " gitblame
+    let g:gitblame_enabled = 0
+    let g:gitblame_message_when_not_committed = 'Oh please, commit this !'
 
     syntax on
 	filetype plugin indent on
